@@ -2,15 +2,17 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="h-screen py-12 mx-6 flex flex-col gap-8">
+    <main className="h-screen py-12 flex flex-col gap-8 mx-8 max-w-sm md:mx-auto md:py-24 md:max-w-md">
       <div>
-        <h1 className="text-4xl">
+        <h1 className="text-4xl lg:text-5xl">
           Hi, my name is <span className="font-medium">Jur</span>
         </h1>
-        <p className="text-xl my-2">A student interested in fullstack development</p>
+        <p className="text-xl lg:text-3xl my-2">
+          A student interested in fullstack development
+        </p>
       </div>
 
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8 max-w-xl text-xl">
         <p>
           Welcome to my place on the internet currently I am finishing my
           studies as a Bio-Informatics student at the University of Applied
