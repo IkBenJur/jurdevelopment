@@ -11,7 +11,6 @@ const JurCard: FC<JurCardProps> = ({}) => {
           <Image
             src={githubIcon}
             alt="GitHub Profile picture"
-            objectFit="contain"
             width={0}
             height={0}
             style={{ width: "auto", height: "100%" }}
