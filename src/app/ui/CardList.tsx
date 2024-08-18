@@ -11,7 +11,7 @@ const CardList: FC<CardListProps> = ({ header, items }) => {
       {header}
       <div className="flex my-2 flex-col gap-4">
         {items.map((item) => (
-          <div key={item.props.title} className="mx-2">
+          <div key={item.key} className="mx-2">
             {item}
           </div>
         ))}

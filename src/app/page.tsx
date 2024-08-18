@@ -10,16 +10,19 @@ export default function Home() {
       title="Rust Interpreter"
       description="Work In Progress, custom programming language interpreter created in Rust."
       technologies="Rust"
+      key={1}
     />,
     <ProjectCard
       title="Learn Italian"
       description="Work In Progress, learn the most common Italian words using spaced repetition algorithm."
       technologies="NextJs, TypeScript, Tailwind"
+      key={2} 
     />,
     <ProjectCard
       title="Rust Interpreter"
       description="Work In Progress, custom programming language interpreter created in Rust."
       technologies="Rust"
+      key={3}
     />,
   ];
 
@@ -27,10 +30,12 @@ export default function Home() {
     <ExperienceCard
       title="Software development Trainee, Working Talent"
       technologies="Java, Angular"
+      key={4}
     />,
     <ExperienceCard
       title="Software development Intern, GenDx"
       technologies="C#, WPF"
+      key={5}
     />,
   ];
 
@@ -38,6 +43,7 @@ export default function Home() {
     <ExperienceCard
       title="Bachelor Bio-Informatics, University of Applied Sciences Leiden"
       technologies="Python, JavaScript, SQL, Java"
+      key={6}
     />,
   ];
 
