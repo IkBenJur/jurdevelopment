@@ -1,23 +1,20 @@
 import { FC, Fragment } from "react";
 
-interface ProjectCardProps {
+interface ExperienceCardProps {
   title: string;
-  description: string;
   technologies: string;
 }
 
-const ProjectCard: FC<ProjectCardProps> = ({
+const ExperienceCard: FC<ExperienceCardProps> = ({
   title,
-  description,
   technologies,
 }) => {
   return (
     <Fragment>
       <p className="text-2xl font-normal text-gray-100">{title}</p>
-      <p className="text-gray-400">{description}</p>
       <p className="font-medium text-gray-300">Technologies: {technologies}</p>
     </Fragment>
   );
 };
 
-export default ProjectCard;
+export default ExperienceCard;
