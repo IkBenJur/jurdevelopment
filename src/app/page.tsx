@@ -34,12 +34,19 @@ export default function Home() {
     />,
   ];
 
+  const educationList = [
+    <ExperienceCard
+      title="Bachelor Bio-Informatics, University of Applied Sciences Leiden"
+      technologies="Python, JavaScript, SQL, Java"
+    />,
+  ];
+
   return (
     <main className="flex flex-row px-32 py-20 gap-6 w-screen">
       <div className="w-2/6 h-fit border rounded-lg border-gray-400">
         <JurCard />
       </div>
-      <div className="w-4/6">
+      <div className="w-4/6 flex flex-col gap-4">
         <CardList
           header={<ItemHeader header="Projects" />}
           items={projectList}
@@ -47,6 +54,10 @@ export default function Home() {
         <CardList
           header={<ItemHeader header="Work Experience" />}
           items={experienceList}
+        />
+        <CardList
+          header={<ItemHeader header="Education" />}
+          items={educationList}
         />
       </div>
     </main>
