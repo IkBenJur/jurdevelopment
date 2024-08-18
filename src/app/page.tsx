@@ -42,11 +42,11 @@ export default function Home() {
   ];
 
   return (
-    <main className="flex flex-row px-32 py-20 gap-6 w-screen">
-      <div className="w-2/6 h-fit border rounded-lg border-gray-400">
+    <main className="flex flex-col px-12 py-8 lg:flex-row sm:px-32 sm:py-20 gap-6 w-screen">
+      <div className="w-full h-fit border rounded-lg border-gray-400 lg:w-[29rem] lg:min-w-96">
         <JurCard />
       </div>
-      <div className="w-4/6 flex flex-col gap-4">
+      <div className="w-full flex flex-col gap-4 lg:w-4/6 sm">
         <CardList
           header={<ItemHeader header="Projects" />}
           items={projectList}

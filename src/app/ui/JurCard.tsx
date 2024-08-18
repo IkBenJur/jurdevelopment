@@ -7,7 +7,8 @@ interface JurCardProps {}
 const JurCard: FC<JurCardProps> = ({}) => {
   return (
     <div className="flex flex-col gap-4 my-4 mx-8">
-      <div className="flex h-24 gap-6">
+      <div className="flex gap-4">
+        <div className="h-24 hidden sm:block">
           <Image
             src={githubIcon}
             alt="GitHub Profile picture"
@@ -15,9 +16,10 @@ const JurCard: FC<JurCardProps> = ({}) => {
             height={0}
             style={{ width: "auto", height: "100%" }}
           />
+        </div>
         <div className="flex flex-col justify-between">
-          <p className="text-4xl font-bold">Jur Beijaard</p>
-          <div className="text-gray-500">
+          <p className="text-3xl font-bold">Jur Beijaard</p>
+          <div className="text-gray-500 text-base">
             <p>Software Developer.</p>
             <p>Utrecht, The Netherlands.</p>
           </div>
